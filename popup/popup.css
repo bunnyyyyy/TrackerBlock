@@ -6,6 +6,58 @@ body {
     height: 4rem;
 }
 
+
+
 .special-text {
     color: red;
 }
+
+
+
+#scroll-container {
+    border: 1px solid black;
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #D7BFFF;
+    opacity: 0.7;
+    }
+
+    #scroll-text {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 1.5em;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+  
+      /* animation properties */
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+
+      -moz-animation: my-animation 25s linear infinite;
+      -webkit-animation: my-animation 25s linear infinite;
+      animation: my-animation 25s linear infinite;
+    }
+
+
+    /* for Chrome */
+    @-webkit-keyframes my-animation {
+      from { -webkit-transform: translateX(100%); }
+      to { -webkit-transform: translateX(-100%); }
+    }
+
+    @keyframes my-animation {
+      from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+      }
+      to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+      }
+    }
