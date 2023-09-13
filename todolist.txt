@@ -1,0 +1,11 @@
+- make extension load before gmail
+- loop over all images
+  - determine image source https://github.com/gdg/PixelBlock/blob/master/scripts/main.js 
+  - log it (show an eye for tracking)
+- 
+
+service worker --> block specific requests
+
+
+
+ 
